@@ -1,18 +1,13 @@
 package br.ufpe.cin.petstop.domain;
 
-import java.io.Serializable;
-
 import br.ufpe.cin.petstop.enumeration.Role;
 import jakarta.persistence.Column;
-import jakarta.persistence.Id;
+import jakarta.persistence.Entity;
 
-public class User implements Serializable {
+@Entity
+public class User extends GenericEntity {
 
     private static final long serialVersionUID = 1L;
-
-    @Id
-    @Column
-    private Long id;
 
     @Column
     private String name;
@@ -28,14 +23,6 @@ public class User implements Serializable {
 
     public User() {
     
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {

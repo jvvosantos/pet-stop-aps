@@ -2,15 +2,13 @@ package br.ufpe.cin.petstop.domain;
 
 import br.ufpe.cin.petstop.enumeration.PetType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 
 @Entity
-public class Pet {
+public class Pet extends GenericEntity {
 
-    @Id
-    private Long id;
+	private static final long serialVersionUID = 1L;
 
-    private String name;
+	private String name;
 
     private int age;
 
@@ -23,14 +21,6 @@ public class Pet {
     private User owner;
 
     public Pet() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {

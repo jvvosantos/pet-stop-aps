@@ -3,7 +3,9 @@ package br.ufpe.cin.petstop.domain;
 import java.util.Date;
 
 import br.ufpe.cin.petstop.enumeration.PetType;
+import jakarta.persistence.Entity;
 
+@Entity
 public class Vet extends User {
 
     private static final long serialVersionUID = 1L;
