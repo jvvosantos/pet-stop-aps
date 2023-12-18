@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>120</y>
+      <w>610</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>br.ufpe.cin.petstop.controller::GenericController
+--
+-service: br.ufpe.cin.petstop.service.GenericServiceImpl
+--
++GenericController(): ctor
++post(br.ufpe.cin.petstop.domain.GenericEntity): br.ufpe.cin.petstop.domain.GenericEntity
++put(br.ufpe.cin.petstop.domain.GenericEntity): br.ufpe.cin.petstop.domain.GenericEntity
++findOne(java.lang.Long): br.ufpe.cin.petstop.domain.GenericEntity
++findAll(org.springframework.data.domain.Pageable): java.lang.Object
++delete(java.lang.Long): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>420</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>br.ufpe.cin.petstop.controller::PetController
+--
+--
++PetController(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>420</y>
+      <w>350</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>br.ufpe.cin.petstop.controller::CustomerController
+--
+--
++CustomerController(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>420</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>br.ufpe.cin.petstop.controller::VetController
+--
+--
++VetController(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>290</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>290</y>
+      <w>70</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>290</y>
+      <w>400</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;380.0;130.0</additional_attributes>
+  </element>
+</diagram>

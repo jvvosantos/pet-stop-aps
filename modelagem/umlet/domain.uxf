@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>312</y>
+      <w>192</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+br.ufpe.cin.petstop.domain::Pet
+--
+-serialVersionUID = 1L: long
+-name: String
+-age: int
+-weight: float
+-height: float
+-type: PetType
+-owner: Customer
+--
++Pet(): ctor
++getName(): String
++setName(String name): void
++getAge(): int
++setAge(int age): void
++getWeight(): float
++setWeight(float weight): void
++getHeight(): float
++setHeight(float height): void
++getType(): PetType
++setType(PetType type): void
++getOwner(): Customer
++setOwner(Customer owner): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>312</y>
+      <w>216</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+br.ufpe.cin.petstop.domain::Customer
+--
+-serialVersionUID = 1L: long
+-name: String
+-email: String
+-password: String
+-role: Role
+--
++Customer(): ctor
++getName(): String
++setName(String name): void
++getEmail(): String
++setEmail(String email): void
++getPassword(): String
++setPassword(String password): void
++getRole(): Role
++setRole(Role role): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>0</y>
+      <w>280</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract Entity&gt;&gt;
+/br.ufpe.cin.petstop.domain::GenericEntity/
+--
+-serialVersionUID = 1L: long
+-id: Long
+-creationDate: Date
+-lastModifiedDate: Date
+--
++GenericEntity(): ctor
++getId(): Long
++setId(Long id): void
++getCreationDate(): Date
++setCreationDate(Date creationDate): void
++getLastModifiedDate(): Date
++setLastModifiedDate(Date lastModifiedDate): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>136</x>
+      <y>312</y>
+      <w>256</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+br.ufpe.cin.petstop.domain::Vet
+--
+-serialVersionUID = 1L: long
+-license: String
+-admissionDate: Date
+-specialization: PetType
+--
++getLicense(): String
++setLicense(String license): void
++getAdmissionDate(): Date
++setAdmissionDate(Date admissionDate): void
++getSpecialization(): PetType
++setSpecialization(PetType specialization): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>400</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+&lt; owns</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>184</y>
+      <w>232</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>184</y>
+      <w>64</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>184</y>
+      <w>440</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;530.0;160.0</additional_attributes>
+  </element>
+</diagram>

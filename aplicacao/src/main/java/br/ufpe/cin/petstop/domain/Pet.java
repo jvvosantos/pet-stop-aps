@@ -1,24 +1,35 @@
 package br.ufpe.cin.petstop.domain;
 
 import br.ufpe.cin.petstop.enumeration.PetType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Pet extends GenericEntity {
 
 	private static final long serialVersionUID = 1L;
 
+	@Column
 	private String name;
 
+	@Column
     private int age;
 
+	@Column
     private float weight;
 
+	@Column
     private float height;
 
+	@Column
     private PetType type;
 
-    private User owner;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "owner_id")
+    private Customer owner;
 
     public Pet() {
     }
@@ -63,11 +74,11 @@ public class Pet extends GenericEntity {
         this.type = type;
     }
 
-    public User getOwner() {
+    public Customer getOwner() {
         return owner;
     }
 
-    public void setOwner(User owner) {
+    public void setOwner(Customer owner) {
         this.owner = owner;
     }
     

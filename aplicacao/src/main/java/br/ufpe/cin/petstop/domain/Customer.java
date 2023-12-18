@@ -5,7 +5,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
-public class User extends GenericEntity {
+public class Customer extends GenericEntity {
 
     private static final long serialVersionUID = 1L;
 
@@ -21,7 +21,7 @@ public class User extends GenericEntity {
     @Column
     private Role role;
 
-    public User() {
+    public Customer() {
     
     }
 

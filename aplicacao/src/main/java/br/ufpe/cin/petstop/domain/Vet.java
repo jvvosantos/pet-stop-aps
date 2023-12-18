@@ -3,17 +3,24 @@ package br.ufpe.cin.petstop.domain;
 import java.util.Date;
 
 import br.ufpe.cin.petstop.enumeration.PetType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 
 @Entity
-public class Vet extends User {
+public class Vet extends Customer {
 
     private static final long serialVersionUID = 1L;
 
+    @Column
     private String license;
 
+    @Column
     private Date admissionDate;
 
+    @Column
+    @Enumerated(EnumType.STRING)
     private PetType specialization;
 
     public String getLicense() {

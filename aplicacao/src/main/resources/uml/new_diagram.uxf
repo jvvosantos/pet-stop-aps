@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>350</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>/br.ufpe.cin.petstop.domain::GenericEntity/
+--
+-serialVersionUID = 1L: long
+-id: Long
+-creationDate: Date
+-lastModifiedDate: Date
+--
++GenericEntity(): ctor
++getId(): Long
++setId(Long id): void
++getCreationDate(): Date
++setCreationDate(Date creationDate): void
++getLastModifiedDate(): Date
++setLastModifiedDate(Date lastModifiedDate): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
